@@ -17,6 +17,7 @@ library(lubridate)
 url <-'https://www.trustpilot.com/review/dealstruck.com'
 
 # Functions
+# test
 
 ### 1. Finde heraus, wie viele Seiten mit reviews gibt es ----
 get_last_page <- function(html){
