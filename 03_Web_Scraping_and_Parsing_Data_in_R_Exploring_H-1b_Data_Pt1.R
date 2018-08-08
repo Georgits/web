@@ -3,10 +3,10 @@ library(rvest)
 library(pbapply)
 library(data.table)
 
-json.cities<-paste0('http://h1bdata.info/cities.php?term=', letters[1])
+json.cities<-paste0('http://h1bdata.info/cities.php?term=', letters)
 all.cities<-unlist(pblapply(json.cities,fromJSON))
 
-city.year<-expand.grid(city=all.cities,yr=seq(2016,2016))
+city.year<-expand.grid(city=all.cities,yr=seq(2012,2018))
 
 city.year$city<-urltools::url_encode(as.character(city.year$city))
 
