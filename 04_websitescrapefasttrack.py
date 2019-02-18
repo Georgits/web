@@ -10,6 +10,11 @@ import urllib.request
 from bs4 import BeautifulSoup
 import csv
 
+import os
+path = 'C:\\Users\\D91067\\Desktop\\R\\web'
+os.chdir(path)
+
+
 
 # specify the url
 urlpage =  'http://www.fasttrack.co.uk/league-tables/tech-track-100/league-table/' 
